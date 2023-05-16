@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { server } from '../../config/index'
 import styles from './recipes.module.css'
 import { RecipeType } from '../../types'
@@ -23,10 +22,12 @@ export default function Home({recipes}: Props) {
   //     )
   // }, [])
 
+  // {recipes.map((item: RecipeType, index) => (<div className="text-3xl font-bold underline decoration-red-500" key={index}>{item.recipeName}</div>))}
+
   return (
     <main className={styles.main}>
       Recipes
-      {recipes.map((item: RecipeType, index) => (<div key={index}>{item.recipeName}</div>))}
+      {recipes.map((item: RecipeType, index) => (<div className="text-3xl font-bold underline decoration-red-500" key={index}>{item.recipeName}</div>))}
     </main>
   )
 }
