@@ -3,6 +3,21 @@ import styles from './recipes.module.css'
 import { RecipeType } from '../../types'
 import {useEffect, useState} from "react";
 import axios from 'axios'
+import Grid from '@mui/material/Grid';
+import ImageList from '@mui/material/ImageList';
+import Box from '@mui/material/Box';
+import {
+  MyRecipes,
+  StyledHeader,
+  StyledButton,
+  StyledContainer,
+  ViewLabel,
+  GalleryIcon,
+  ListIcon,
+  StyledPaper
+} from "./RecipesPage.styles";
+
+import RecipeComponent from "../../components/RecipeComponent";
 
 type Props = {
   recipes: RecipeType[]
@@ -26,8 +41,54 @@ export default function Home({recipes}: Props) {
 
   return (
     <main className={styles.main}>
-      Recipes
-      {recipes.map((item: RecipeType, index) => (<div className="text-3xl font-bold underline decoration-red-500" key={index}>{item.recipeName}</div>))}
+      <Box sx={{flexGrow: 1}}>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            header here
+          </Grid>
+          <Grid item xs={12}>
+            <StyledPaper elevation={3} style={{height: ''}}>
+              <Grid item xs={12}>
+                <StyledContainer>
+                  <MyRecipes data-testid={'title-element'}>My Recipes</MyRecipes>
+                  <ViewLabel>View</ViewLabel>
+                  <GalleryIcon
+                    style={{color: '#1976d2'}}
+                    onClick={() => {console.log('handleGalleryViewMod')}}
+                  />
+                  <ListIcon
+                    data-testid={'list-mode-icon'}
+                    style={{color: 'rgba(0,0,0,0.6)'}}
+                    onClick={() => {console.log('handleListViewMod')}}
+                  />
+                  <StyledButton
+                    variant="outlined"
+                    data-testid={'add-recipe-button'}
+                    onClick={() => {}}
+                  >
+                    Add new Recipe
+                  </StyledButton>
+                </StyledContainer>
+              </Grid>
+              <Grid item xs={12}>
+                {
+                  recipes.map((recipe: RecipeType) => (
+                    <ul
+                      data-testid={'list-recipes'}
+                      style={{listStyleType: 'none'}}
+                    >
+                      <li data-testid={'list-recipe'}><RecipeComponent
+                        recipe={recipe}
+                        handleDeleteRecipe={() => {}}/>
+                      </li>
+                    </ul>
+                  ))
+                }
+              </Grid>
+            </StyledPaper>
+          </Grid>
+        </Grid>
+      </Box>
     </main>
   )
 }
