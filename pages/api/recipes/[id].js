@@ -11,3 +11,11 @@ export default function handler({ query: { id } }, res) {
       .json({ message: `Recipe with the id of ${id} is not found` })
   }
 }
+export default function deleteRecipe({ query: { id } }, res) {
+
+  const deletedRecipe = recipes.filter((recipe) => recipe.recipeId !== id)
+  res.status(200).json(deletedRecipe)
+
+
+  // return axios.delete(BASE_URL + `recipe/${recipeId}` )
+}

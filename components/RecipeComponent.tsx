@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import { RecipeType } from '../../types'
+import { RecipeType } from './../types'
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import React from "react";

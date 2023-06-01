@@ -39,6 +39,17 @@ export default function Home({recipes}: Props) {
 
   // {recipes.map((item: RecipeType, index) => (<div className="text-3xl font-bold underline decoration-red-500" key={index}>{item.recipeName}</div>))}
 
+  const handleDeleteRecipe = (res: RecipeType) => {
+      // axios
+      //   .get('http://localhost:3000/api/recipes/[id]')
+      //   .then((response: any) => setRecipes(response.data))
+      //   .catch((error: any) => console.log(error)
+      //   )
+
+
+    console.log('delete')
+  }
+
   return (
     <main className={styles.main}>
       <Box sx={{flexGrow: 1}}>
@@ -79,7 +90,7 @@ export default function Home({recipes}: Props) {
                     >
                       <li data-testid={'list-recipe'}><RecipeComponent
                         recipe={recipe}
-                        handleDeleteRecipe={() => {}}/>
+                        handleDeleteRecipe={handleDeleteRecipe}/>
                       </li>
                     </ul>
                   ))
