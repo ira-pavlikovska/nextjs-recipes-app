@@ -1,3 +1,4 @@
+
 import { server } from '../../config/index'
 import styles from './recipes.module.css'
 import { RecipeType } from '../../types'
@@ -19,11 +20,15 @@ import {
 
 import RecipeComponent from "../../components/RecipeComponent";
 
+
+
 type Props = {
   recipes: RecipeType[]
 }
 export default function Home({recipes}: Props) {
-// console.log(JSON.stringify(recipes))
+
+// console.log(recipes)
+
 
   // client side rendering of the page
   // const [recipes, setRecipes] = useState<RecipeType[]>([])
@@ -32,11 +37,11 @@ export default function Home({recipes}: Props) {
   // useEffect(() => {
   //   axios
   //     .get('http://localhost:3000/api/recipes')
-  //     .then((response: any) => setRecipes(response.data))
+  //     .then((response: any) => console.log(response.data))
   //     .catch((error: any) => console.log(error)
   //     )
   // }, [])
-
+  //
   // {recipes.map((item: RecipeType, index) => (<div className="text-3xl font-bold underline decoration-red-500" key={index}>{item.recipeName}</div>))}
 
   const handleDeleteRecipe = (res: RecipeType) => {
