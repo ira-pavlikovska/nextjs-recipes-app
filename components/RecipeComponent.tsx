@@ -2,7 +2,9 @@ import Button from "@mui/material/Button";
 import { RecipeType } from './../types'
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import Link from 'next/link'
 import React from "react";
+
 
 type Props = {
     recipe?: RecipeType,
@@ -31,8 +33,15 @@ const RecipeComponent = ({recipe, handleDeleteRecipe}: Props) => {
             <Grid container spacing={2}>
                 <Grid item xs={12} md={4}>
                     <div style={{marginTop: 30, marginLeft: 30}}>
-                        <img style={{width: 350, height: 350}}
-                             src={recipe.imageUrl ? recipe.imageUrl : 'https://via.placeholder.com/350x350?text=Yammy!'}/>
+                        <Link href={`/recipe/${recipe.recipeId}`}>
+                            <img style={{width: 350, height: 350}}
+                                 src={recipe.imageUrl ? recipe.imageUrl : 'https://via.placeholder.com/350x350?text=Yammy!'}
+                                 onClick={()=> {
+                                     console.log(' go to recipe component')
+                                     // navigate(`/recipe/id=${recipe.recipeId}`)
+                                 }}
+                            />
+                        </Link>
                     </div>
                 </Grid>
                 <Grid item xs={12} md={8}>

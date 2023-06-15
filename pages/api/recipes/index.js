@@ -3,7 +3,7 @@ const fs = require('fs');
 import { recipes } from '../../../data'
 
 import configs from '../../../configs'
-const filePath = path.join(configs.fileDBPath, 'recipes_back.json');
+const filePath = path.join(configs.fileDBPath, 'recipes.json');
 
 export default function handler(req, res) {
   try {

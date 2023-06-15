@@ -25,7 +25,7 @@ import RecipeComponent from "../../components/RecipeComponent";
 type Props = {
   recipes: RecipeType[]
 }
-export default function Home({recipes}: Props) {
+export default function Recipes({recipes}: Props) {
 
 // console.log(recipes)
 
@@ -88,8 +88,9 @@ export default function Home({recipes}: Props) {
               </Grid>
               <Grid item xs={12}>
                 {
-                  recipes.map((recipe: RecipeType) => (
+                  recipes.map((recipe: RecipeType, idx) => (
                     <ul
+                      key={idx}
                       data-testid={'list-recipes'}
                       style={{listStyleType: 'none'}}
                     >
