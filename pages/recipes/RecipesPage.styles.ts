@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import ViewListIcon from '@mui/icons-material/ViewList';
-import Paper from '@mui/material/Paper';
 import CollectionsIcon from '@mui/icons-material/Collections';
+
 export const MyRecipes = styled.span`
   font-size: 22px;
   font-weight: bold;
@@ -13,7 +13,7 @@ export const MyRecipes = styled.span`
 export const StyledHeader = styled.div `
   align-items: center
 `
-export const StyledPaper = styled(Paper) `
+export const StyledPaper = styled.div `
   background-color: #fff;
   padding: 20px;
   text-align: center;

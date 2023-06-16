@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc394295-8233-46b0-90f4-966f892cf83a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/recipe/RecipePage.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/recipe/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/recipe/recipe.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipes.json" afterDir="false" />
+    <list default="true" id="cc394295-8233-46b0-90f4-966f892cf83a" name="Changes" comment="Recipe page created, api/recipe/id end point">
+      <change afterPath="$PROJECT_DIR$/pages/recipes/indexOld.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/RecipeComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RecipeComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/api/recipes/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/recipes/[id].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/recipes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/recipes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/recipes/recipes.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/recipes/recipesData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recipe/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recipe/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recipes/RecipesPage.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recipes/RecipesPage.styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/recipes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recipes/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes_back.json" beforeDir="false" afterPath="$PROJECT_DIR$/recipes_back.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +36,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2PhsFnuGQCx41lMb3Hz39Ni4S7A" />
   <component name="ProjectViewState">
@@ -51,7 +47,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/iryna/git/nextjs-recipes-app/pages/recipe",
+    "last_opened_file_path": "/Users/iryna/git/nextjs-recipes-app/pages/recipes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -64,9 +60,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/recipes" />
       <recent name="$PROJECT_DIR$/pages/recipe" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/pages/recipes" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/pages/api" />
     </key>
@@ -86,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683920546925</updated>
       <workItem from="1683920549203" duration="915000" />
-      <workItem from="1685635743746" duration="39166000" />
+      <workItem from="1685635743746" duration="53020000" />
     </task>
     <task id="LOCAL-00001" summary="add axios">
       <created>1683922585216</created>
@@ -123,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686346623543</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Recipe page created, api/recipe/id end point">
+      <created>1686792993722</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686792993722</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +149,7 @@
     <MESSAGE value="mui++" />
     <MESSAGE value="added handleDeleteRecipe method, created RecipeComponent," />
     <MESSAGE value="read recipes data from json file in root directory." />
-    <option name="LAST_COMMIT_MESSAGE" value="read recipes data from json file in root directory." />
+    <MESSAGE value="Recipe page created, api/recipe/id end point" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recipe page created, api/recipe/id end point" />
   </component>
 </project>

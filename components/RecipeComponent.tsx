@@ -36,10 +36,6 @@ const RecipeComponent = ({recipe, handleDeleteRecipe}: Props) => {
                         <Link href={`/recipe/${recipe.recipeId}`}>
                             <img style={{width: 350, height: 350}}
                                  src={recipe.imageUrl ? recipe.imageUrl : 'https://via.placeholder.com/350x350?text=Yammy!'}
-                                 onClick={()=> {
-                                     console.log(' go to recipe component')
-                                     // navigate(`/recipe/id=${recipe.recipeId}`)
-                                 }}
                             />
                         </Link>
                     </div>
