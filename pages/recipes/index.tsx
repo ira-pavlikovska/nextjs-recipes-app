@@ -2,6 +2,7 @@ import {server} from '../../config/index'
 import styles from './recipes.module.css'
 import {RecipeType} from '../../types'
 import {useEffect, useState} from "react";
+import Header from '../../components/Header';
 import axios from 'axios'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -10,6 +11,7 @@ import {
   StyledButton,
   StyledContainer,
   ViewLabel,
+  StyledHeader,
   GalleryIcon,
   ListIcon,
   StyledPaper
@@ -52,7 +54,7 @@ export default function Recipes() {
       <Box sx={{flexGrow: 1}}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            header here
+            <StyledHeader><Header /></StyledHeader>
           </Grid>
           <Grid item xs={12}>
             <StyledPaper style={{height: ''}}>
